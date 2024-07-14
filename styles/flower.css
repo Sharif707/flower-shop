@@ -1,0 +1,110 @@
+/* imported fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html,
+body {
+  font-size: 62.5%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button,
+input {
+  border: none;
+}
+button {
+  padding: 1.5rem 3.1rem;
+}
+
+/* hero section starts here */
+.hero-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 68px;
+  flex-wrap: wrap;
+  background: rgba(229, 84, 115, 0.1);
+}
+.hero-content {
+  flex-basis: 40%;
+}
+.hero-content > button {
+  border-radius: 8px;
+  color: white;
+
+  background: rgb(229, 84, 115);
+}
+
+.hero-img {
+  flex: 0 1 35%;
+}
+.hero-header {
+  color: rgb(39, 39, 39);
+  font-size: 5.6rem;
+}
+.hero-content > p {
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 1.8rem;
+  margin: 2.2rem 0;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-header {
+    font-size: 3rem;
+  }
+  .hero-content > p {
+    font-size: 1.5rem;
+    margin: 1.4rem 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-header {
+    font-size: 2.4rem;
+  }
+  .hero-content > p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 20px 25px;
+
+    gap: 40px;
+  }
+  .hero-header {
+    text-align: center;
+  }
+  .hero-img{
+   
+    max-width: 400px;
+    margin: auto;
+  }
+  .hero-content > button {
+    margin: auto;
+    display: block;
+  }
+  .hero-content > p {
+    font-size: 1.3rem;
+    margin: 0.75rem 0;
+  }
+}
